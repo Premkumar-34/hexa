@@ -12,3 +12,89 @@
     <a href="register.html">Sign Up</a>
 </body>
 </html>
+
+#login page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
+            <label>
+                <input type="checkbox" id="rememberMe" name="rememberMe"> Remember Me
+            </label>
+            <button type="button" onclick="login()">Login</button>
+            <a href="password-recovery.html">Forgot Password?</a>
+            <a href="register.html">Sign Up</a>
+        </form>
+        <div id="errorMessage"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+#password-recovery page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Recovery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Recovery</h2>
+        <form id="passwordRecoveryForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your registered email" required>
+            <button type="button" onclick="recoverPassword()">Submit</button>
+            <a href="login.html">Back to Login</a>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+#register page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="registerForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required minlength="8">
+            <button type="button" onclick="register()">Sign Up</button>
+            <a href="login.html">Back to Login</a>
+        </form>
+        <div id="errorMessage"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
