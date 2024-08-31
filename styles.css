@@ -1,143 +1,46 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    padding-top: 50px; /* For sticky header */
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
 }
 
-/* Header styles */
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+h2 {
+    text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.8em;
-}
-
-nav ul {
-    list-style: none;
+form {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
+label {
+    margin-bottom: 5px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Hero section styles */
-.hero {
-    background: #007bff;
-    color: #fff;
-    padding: 60px 0;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    background: #fff;
-    color: #007bff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-}
-
-.cta-button:hover {
-    background: #e9ecef;
-}
-
-/* Features section styles */
-#features {
-    padding: 40px 0;
-    text-align: center;
-}
-
-#features h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.feature {
-    margin-bottom: 20px;
-}
-
-.feature h3 {
-    font-size: 1.5em;
+input {
     margin-bottom: 10px;
+    padding: 10px;
 }
 
-.feature p {
-    font-size: 1.1em;
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-/* About section styles */
-#about {
-    background: #f8f9fa;
-    padding: 40px 0;
+button:hover {
+    background-color: #0056b3;
+}
+
+#errorMessage, #message {
+    color: red;
     text-align: center;
-}
-
-#about p {
-    font-size: 1.1em;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Contact section styles */
-#contact {
-    padding: 40px 0;
-    text-align: center;
-}
-
-#contact p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-/* Footer styles */
-footer {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
 }
